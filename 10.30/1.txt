@@ -1,0 +1,36 @@
+steam流  
+什么是stream(流)
+stream是一个抽象的接口，有起点和终点处理数据的过程
+流的类型  4种
+readable stream  可读流  writeable  stream  可写流   duplex 双工流 transform转换流
+数据的压缩  zlib
+为什么使用stream？
+防止数据量过大，响应时间过长，加载缓慢
+stream的流转过程？
+将获取的数据量，通过文件处理流一段一段的传输过去，而不是一下子全部传输
+
+监控日志  readline模块
+先要创建一个readline.Interface类
+实例都是使用readline.createInterface()方法构造的
+每个实例都关联着一个input可读流和一个output可写流
+data - 当有数据可读时触发。
+end - 没有更多的数据可读时触发。
+line -  监听日志事件
+close-  日志读取完成关闭
+stream流的应用？
+fs 获取数据
+
+buffer缓冲区
+buffer 二进制数据  缓存区
+什么是buffer?  从类型说，就是一个类数组  从内存来说，开辟了一个新内存空间
+作用：处理二进制数据  解决数据传输过大问题
+案例：文件流 事件流  TCP流
+别名：缓存区(等待区)
+什么是二进制数据（0b）？ 返回0 和1  八进制（0）  十六进制（0x）
+创建buffer?   new buffer()   废弃  buffer是一个全局对象，所以不需要通过require加载
+buffer可以传输的类型  string, Buffer, ArrayBuffer, Array, or Array-like Object
+buffer下面有哪些方法
+toJSON  toString() slice  contact length  字节 bit  byte
+buffer的编码类型 utf-8  base64  hex  Ascii unicode
+buffer和cache的区别
+buffer是一个临时居住地 cache永久的家

@@ -1,0 +1,53 @@
+parse
+stringify
+escape
+uneacape
+
+module  模块作用域
+
+setTimeout属于宏任务还是微任务？
+promise属于宏任务还是微任务
+在node.js中每一个JS都是一个对应的模块，模块里面的变量只在当前模块有效
+
+es6  export export default
+全局对象不需要引用
+抛出，暴露
+区别
+1.两者默认都是空对象
+2.exports是指向module.exports的引用
+
+定义一个路由文件router.js
+在router中定义3个路由视图
+在03.js中通过路径进行访问路由视图
+
+fs
+readfile  write
+200 400 304 404 500 502
+npm 包管理工具
+命令：
+npm login 登录
+npm publish 推送包
+npm install 下载   包名称--save
+--save =-S把项目依赖包先下载到生产环境中
+什么是生产环境？
+线上运行的环境
+--save-dev ==-D把项目依赖包先下载到开发环境中
+
+
+npm  init 项目初始化 package.json
+npm  init -y
+npm uninstall 卸载
+
+cnpm 淘宝镜像
+案例：
+上传图片：
+formidable
+
+stream流
+events 事件
+buffer 二进制缓存
+process 进程
+express
+
+
+
